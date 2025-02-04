@@ -1,0 +1,366 @@
+/* Base styles */
+.bodyy {
+    width: 95vw;
+    height: 100vh;
+    margin: 20px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.name:hover {
+    cursor: none;
+}
+
+.nav {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(63, 62, 62);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.content a:hover {
+    color: rgb(110, 6, 242);
+    cursor: pointer;
+}
+
+.whatsapp:hover {
+    cursor: pointer;
+}
+
+.intro {
+    display: flex;
+    margin-top: 35px;
+    justify-content: space-between;
+}
+
+.introleft {
+    width: 50vw;
+    margin-top: 100px;
+}
+
+.introright {
+    align-items: center;
+    justify-content: center;
+}
+
+.fsdimage {
+    height: 80vh;
+    width: 600px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.getintouch {
+    background-color: #6e06f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.getintouch:hover {
+    background-color: blueviolet;
+}
+
+.browseprojects {
+    background-color: white;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.browseprojects:hover {
+    color: aliceblue;
+    background-color: black;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    width: 95vw;
+}
+
+.projects h1 {
+    font-weight: 1000;
+    font-size: 50px;
+}
+
+.aboutme {
+    margin-top: 25px;
+    width: 95vw;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.aboutme h1 {
+    font-weight: 1000;
+    font-size: 50px;
+}
+
+.aboutme h6 {
+    display: block;
+    border-left: 5px solid rgb(110, 6, 242);
+    gap: 5px;
+    padding: 5px;
+    font-size: 18px;
+    color: rgb(63, 62, 62);
+}
+
+.stackplace {
+    display: flex;
+}
+
+.stackbox {
+    display: inline-block;
+    height: 300px;
+    width: 450px;
+}
+
+.achivements {
+    margin-left: 90px;
+}
+
+.achievementsbox {
+    margin-top: 25px;
+    height: 300px;
+    width: 650px;
+}
+
+.stack-item {
+    display: inline-block;
+    height: 75px;
+    width: 90px;
+    margin: 10px;
+    padding: 0px;
+    border: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.stack-item p {
+    font-weight: 700;
+    font-style: italic;
+    justify-self: center;
+}
+
+.java,
+.python,
+.javascript,
+.react,
+.html,
+.css,
+.spring,
+.mysql,
+.mongodb,
+.bootstrap,
+.git,
+.githubb {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 15px;
+    justify-self: center;
+}
+
+.achul {
+    list-style: none;
+}
+
+.lastsection {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gmail,
+.linkedin,
+.github,
+.whatsapp {
+    height: 30px;
+    width: 30px;
+    color: black; /* Default color */
+    transition: color 0.3s;
+    justify-self: center;
+    align-self: center;
+    margin: 10px;
+}
+
+.gmail:hover,
+.linkedin:hover,
+.github:hover,
+.whatsapp:hover {
+    color: rgb(110, 6, 242); /* Change color on hover */
+}
+
+.projects {
+    margin-bottom: 30px;
+}
+
+.projectcontent {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.prjct1 {
+    display: inline-block;
+    height: 300px;
+    width: 450px;
+    margin-top: 30px;
+    padding: 0px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./src/assets/Abstract Fluid Purple Gradient for Glassmorphism Background Banner Ultra High Resolution.jpeg");
+}
+
+.prjct2 {
+    border: 1px solid black;
+    height: 300px;
+    width: 600px;
+    margin-left: 60px;
+    margin-top: 30px;
+    border-radius: 25px;
+    background-image: url("./src/assets/Abstract Fluid Purple Gradient for Glassmorphism Background Banner Ultra High Resolution.jpeg");
+}
+
+.traveller,
+.ecom {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.p1 {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: 450px;
+    height: 410px;
+    margin-bottom: 30px;
+}
+
+.p2 {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: 600px;
+    height: 410px;
+    margin-bottom: 30px;
+}
+
+.project-details {
+    margin-bottom: 25px;
+}
+
+.project-details h3 {
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.project-details p {
+    margin-bottom: 25px;
+}
+
+/* Media Queries for responsiveness */
+
+/* For small screens (phones) */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .introleft {
+        width: 100vw;
+        margin-top: 30px;
+    }
+
+    .fsdimage {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .projects h1 {
+        font-size: 40px;
+    }
+
+    .projects {
+        width: 100vw;
+    }
+
+    .prjct1,
+    .prjct2 {
+        width: 90vw;
+        margin-left: 0;
+    }
+
+    .project-details h3 {
+        font-size: 18px;
+    }
+
+    .project-details p {
+        font-size: 14px;
+    }
+
+    .getintouch {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .browseprojects {
+        width: 100%;
+    }
+}
+
+/* For very small screens (portrait phones) */
+@media (max-width: 480px) {
+    .bodyy {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .introleft {
+        margin-top: 50px;
+        width: 100vw;
+    }
+
+    .traveller,
+    .ecom {
+        height: 60vh;
+    }
+
+    .projects h1 {
+        font-size: 35px;
+    }
+
+    .project-details h3 {
+        font-size: 16px;
+    }
+
+    .project-details p {
+        font-size: 12px;
+    }
+
+    .getintouch {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
