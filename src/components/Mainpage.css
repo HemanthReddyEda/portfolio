@@ -277,72 +277,51 @@
 .project-details p {
     margin-bottom: 25px;
 }
-
-/* Media Queries for responsiveness */
-
-/* For small screens (phones) */
-@media (max-width: 768px) {
-    .intro {
-        flex-direction: column;
-        margin-top: 20px;
-    }
-
+@media (max-width: 1200px) {
     .introleft {
-        width: 100vw;
-        margin-top: 30px;
+        width: 40vw;
     }
 
     .fsdimage {
-        width: 100vw;
-        height: 50vh;
+        width: 500px;
+    }
+
+    .prjct1,
+    .prjct2 {
+        width: 400px;
+    }
+
+    .p1,
+    .p2 {
+        width: 400px;
     }
 
     .projects h1 {
         font-size: 40px;
     }
 
-    .projects {
-        width: 100vw;
+    .stackbox {
+        width: 400px;
     }
 
-    .prjct1,
-    .prjct2 {
-        width: 90vw;
-        margin-left: 0;
-    }
-
-    .project-details h3 {
-        font-size: 18px;
-    }
-
-    .project-details p {
-        font-size: 14px;
-    }
-
-    .getintouch {
-        font-size: 14px;
-        padding: 8px 15px;
-    }
-
-    .browseprojects {
-        width: 100%;
+    .aboutme h1 {
+        font-size: 40px;
     }
 }
 
-/* For very small screens (portrait phones) */
-@media (max-width: 480px) {
-    .bodyy {
-        padding: 5px;
-        margin: 5px;
+@media (max-width: 992px) {
+    .intro {
+        flex-direction: column;
     }
 
-    .introleft {
-        margin-top: 50px;
-        width: 100vw;
+    .introleft,
+    .introright {
+        width: 100%;
+        margin-top: 0;
     }
 
-    .traveller,
-    .ecom {
+    .fsdimage {
+        width: 80vw;
         height: 60vh;
     }
 
@@ -350,16 +329,441 @@
         font-size: 35px;
     }
 
-    .project-details h3 {
+    .prjct1,
+    .prjct2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .stackbox {
+        width: 350px;
+    }
+
+    .aboutme h1 {
+        font-size: 35px;
+    }
+
+    .stack-item {
+        width: 80px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects h1 {
+        font-size: 30px;
+    }
+
+    .prjct1,
+    .prjct2 {
+        width: 100%;
+    }
+
+    .stackbox {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .achievementsbox,
+    .stackbox {
+        width: 100%;
+    }
+
+    .aboutme h1 {
+        font-size: 30px;
+    }
+
+    .getintouch,
+    .browseprojects {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .lastsection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gmail,
+    .linkedin,
+    .github,
+    .whatsapp {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .projects h1 {
+        font-size: 28px;
+    }
+
+    .introleft {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .fsdimage {
+        width: 90vw;
+        height: 50vh;
+    }
+
+    .prjct1,
+    .prjct2 {
+        width: 100%;
+    }
+
+    .stack-item {
+        width: 70px;
+        height: 50px;
+    }
+
+    .aboutme h1 {
+        font-size: 28px;
+    }
+
+    .getintouch,
+    .browseprojects {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .projects h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introleft,
+    .introright {
+        width: 100%;
+        text-align: center;
+    }
+
+    .introleft h1 {
+        font-size: 40px;
+    }
+
+    .introleft h5 {
+        font-size: 24px;
+    }
+
+    .aboutme {
+        text-align: center;
+    }
+
+    .stack-item {
+        width: 120px;
+    }
+
+    .projectcontent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectcontent .p1,
+    .projectcontent .p2 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .project-details {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* Mobile Screen (Below 600px) */
+@media (max-width: 600px) {
+    .nav {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .content a {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .introleft {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .introleft h1 {
+        font-size: 32px;
+    }
+
+    .introleft h5 {
+        font-size: 18px;
+    }
+
+    .whatsapp {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .aboutme {
+        padding: 10px;
+    }
+
+    .stacks {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .stack-item {
+        width: 100px;
+        margin: 10px;
+    }
+
+    .projectcontent {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .projectcontent .p1,
+    .projectcontent .p2 {
+        width: 95%;
+        text-align: center;
+    }
+
+    .project-details {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .lastsection .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Adjustments for Extra Small Devices (Below 400px) */
+@media (max-width: 400px) {
+    .introleft h1 {
+        font-size: 28px;
+    }
+
+    .introleft h5 {
         font-size: 16px;
     }
 
-    .project-details p {
-        font-size: 12px;
+    .stack-item {
+        width: 80px;
     }
 
-    .getintouch {
+    .content a {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introleft,
+    .introright {
+        width: 100%;
+        text-align: center;
+    }
+
+    .introleft h1 {
+        font-size: 40px;
+    }
+
+    .introleft h5 {
+        font-size: 24px;
+    }
+
+    .aboutme {
+        text-align: center;
+    }
+
+    .stack-item {
+        width: 120px;
+    }
+
+    .projectcontent {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .projectcontent .p1,
+    .projectcontent .p2 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .project-details {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* Mobile Screen (Below 600px) */
+@media (max-width: 600px) {
+    .nav {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .content a {
         font-size: 14px;
-        padding: 8px 10px;
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .introleft {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .introleft h1 {
+        font-size: 32px;
+    }
+
+    .introleft h5 {
+        font-size: 18px;
+    }
+
+    .whatsapp {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .aboutme {
+        padding: 10px;
+    }
+
+    .stacks {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .stack-item {
+        width: 100px;
+        margin: 10px;
+    }
+
+    .projectcontent {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .projectcontent .p1,
+    .projectcontent .p2 {
+        width: 95%;
+        text-align: center;
+    }
+
+    .project-details {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .lastsection .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Adjustments for Extra Small Devices (Below 400px) */
+@media (max-width: 400px) {
+    .introleft h1 {
+        font-size: 28px;
+    }
+
+    .introleft h5 {
+        font-size: 16px;
+    }
+
+    .stack-item {
+        width: 80px;
+    }
+
+    .content a {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    /* Preventing Overlapping of Smaller Text and Images */
+    .introleft {
+        margin-bottom: 20px;
+    }
+
+    .introleft img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .stacks {
+        gap: 10px; /* Reduced gap between skills */
+    }
+
+    .stack-item {
+        width: 100%;  /* Ensures each icon takes full width */
+        max-width: 80px;  /* Restricts the size of icons */
+        margin: 5px 0;  /* Adds some spacing between the items */
+        display: block; /* Forces icons to behave like blocks */
+        text-align: center;
+        clear: both;  /* Ensures items don't overlap with other sections */
     }
 }
